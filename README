@@ -1,1 +1,21 @@
-SA GROUP14 Assignment
+This project is for WILP MTECH - SA Assignment - Group 14
+Three modules sa-assignment-publisher, sa-assignment-subscriber, sa-polling-standalone
+pre requesites:
+Install rabbitmq and start the service
+install postgress db and create IMDB table with id, title, director, actors columns
+
+
+sa-assignment-publisher : This module is to take the user input (Movie title, release year) and put it in message queue
+
+
+sa-assignment-subscriber: This module is to 
+1) poll the message queue and get the message sent by publisher module
+2) query imdb api to get the director and cast of teh movie
+3) Instert into postgres db public.IMDB table
+    
+sa-polling-standalone:
+This module is to poll db every 10 sec and display records from IMDB table
+
+
+
+
